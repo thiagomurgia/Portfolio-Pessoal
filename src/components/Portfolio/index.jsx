@@ -19,7 +19,7 @@ export function Portfolio(){
     await axios.get(url+'/repos')
     .then(response => {
       const data = response.data
-      setRepos([data])
+      setRepos(data)
       setLoading(true)
     })
 
@@ -29,8 +29,6 @@ export function Portfolio(){
   }
  }
 
-console.log(repos)
-
   return(
     <>
     {!setLoading ? <p>Carregando</p> : 
@@ -38,7 +36,9 @@ console.log(repos)
     <h1>Portfolio </h1>
     <h2>User Data</h2>
     <ul>
-      
+      {repos.map( (repo) => {
+        return <li key={repo.id}>{repo.id}</li>
+      })}
     </ul>
     </>
     }
