@@ -6,7 +6,7 @@ export function Header(){
     <Container>
       <div>murgia@thiago</div>
       <div><DateTime/></div>
-      <div>Template Inpired in Linux-Ubuntu</div>
+      <div>Template Inpired by my Linux-Ubuntu</div>
     </Container>
   )
 }

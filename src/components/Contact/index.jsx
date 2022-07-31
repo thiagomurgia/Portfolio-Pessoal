@@ -6,7 +6,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { Spring, animated } from "react-spring";
 import { useState, useRef } from "react";
-import { MessageConfirm } from "../../animations/MessageAnimation";
+import { MessageConfirm } from "../../animations/MessageAnimation copy";
 import Swal from "sweetalert2";
 import InputMask from "react-input-mask";
 import emailjs from '@emailjs/browser'
@@ -87,7 +87,6 @@ function sendEmail() {
                   <h2>me mande um oi...</h2>
                 </div>
                 <div className="right">
-                  <h1>Contato</h1>
                   <form ref={form} onSubmit={formik.handleSubmit}>
                     {formik.touched.name && formik.errors.name
                       ? [

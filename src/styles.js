@@ -19,7 +19,7 @@ export const Dock = styled.div`
   left:0;
   right:0;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1.75rem;
   padding: 0 1.5rem;
 
   img{
@@ -31,6 +31,7 @@ export const Dock = styled.div`
       width: 16%;
     }
   }
+  
 
 
   @media (max-width: 720px){

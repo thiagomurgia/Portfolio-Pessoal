@@ -1,10 +1,10 @@
-import { Container } from "./styles";
+import { Container } from "./styles"
 
 import {Spring, animated} from 'react-spring'
 
-import UbuntuImg from "../../assets/icons/ubuntu-stroke.svg";
+import UbuntuImg from "../../assets/icons/ubuntu-stroke.svg"
 
-import { LottieHome } from "../../animations/HomeAnimation";
+import { LottieHome } from "../../animations/HomeAnimation"
 
 export function Home(){
 

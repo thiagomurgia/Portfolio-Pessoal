@@ -36,8 +36,6 @@ export function App() {
   const[showDesktop, setShowDesktop] = useState(false)
   
 
-  console.log(showHome)
-
   function handleHomeClick(){
     setShowHome(true)
     setShowPortfolio(false)

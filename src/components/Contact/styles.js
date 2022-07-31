@@ -15,13 +15,14 @@ export const Container = styled.div`
     width: 80%;
     height:87%;
     border-radius: 0.25rem;
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
     .form-space{
+      /* position: relative; */
       position: relative;
       box-shadow: 2px 2px 4px #000;
       background-color: rgba(102, 0, 51, 0.8);
@@ -64,21 +65,19 @@ export const Container = styled.div`
 
       .right{
         width: 60%;
-        height: 100%;
+        position: relative;
         background: rgba(0,0,0, 0.8);
         border-radius: 0 0.5rem 0.5rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        h1{
-          color: #fff;
-        }
-
         form{
           display: flex;
+          justify-content: center;
           width: 50%;
           flex-direction: column;
+          height:90%;
 
           label{
             color: #cacaca;
@@ -297,13 +296,17 @@ export const Container = styled.div`
 
     }
   }
-}
-`;
 
-export const StyledModal = Modal.styled`
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  border:solid 1px #000;
-  
+  @media (max-height: 720px){
+    form{
+      label{
+        margin-top: 0;
+      }
+      button{
+        margin-top: 0.25rem;
+      }
+    }
+
+  }
+}
 `;
