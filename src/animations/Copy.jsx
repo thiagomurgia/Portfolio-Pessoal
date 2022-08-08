@@ -1,20 +1,18 @@
 import React from 'react';
 import Lottie from 'react-lottie'
-import Dev from './dev.json'
+import CopyAnim from './copy-anim.json'
 
-export function LottieHome(){
+export function Copy(){
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: true,
-    animationData: Dev,
+    animationData: CopyAnim,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
     }
   };
   
   return(
-
-    <Lottie options={defaultOptions}/>
-
+    <Lottie options={defaultOptions} style={{maxWidth:'25px'}}/>
   )
 }

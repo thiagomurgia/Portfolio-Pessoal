@@ -2,6 +2,9 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Spring, animated } from 'react-spring'
 
+import Copy from '../../assets/icons/copy.svg'
+import { Copy as CopyAnim } from '../../animations/Copy'
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,6 +14,8 @@ import { Container} from './styles'
 
 import { ApiLoading } from '../../animations/ApiLoading'
 
+import {CopyToClipboard} from 'react-copy-to-clipboard'
+
 
 export function Portfolio(){
 
@@ -19,6 +24,16 @@ export function Portfolio(){
 
   const[repos, setRepos] = useState([])
   const[loading, setLoading] = useState(false)
+  const[copy, setCopy]= useState(false)
+
+  function clipboardCopy(){
+    setCopy(true)
+    setTimeout(()=>{
+      setCopy(false)
+    }, 3000)
+  }
+
+
 
  useEffect(()=>{
   getData()
@@ -67,10 +82,23 @@ export function Portfolio(){
                     <div className="card-wrapper" key={repo.id}>
                       <div className="card">
 
-                      <div className="header"><h1>{repo.name}</h1></div>
+                      <div className="header"><h1>Repositório: </h1> <h3>{repo.name}</h3></div>
                       <div className="content">
-                        <p>{repo.description}</p>
-                            <input value={repo.clone_url} style={{height: "2.75rem", width: "80%"}}/>
+                        <div>
+                        <div>
+                          <p>{repo.description}</p>
+                          <div className='repo-url'>
+                          <input value={repo.clone_url} disabled/>
+                          <CopyToClipboard
+                          text={repo.clone_url}
+                          onCopy={() => clipboardCopy()}>
+                            {copy ? <span><CopyAnim/> <small>Copiado!</small></span> : <span><img src={Copy}/></span>}
+                          </CopyToClipboard>
+                          </div>
+                            
+                            </div>
+                        </div>
+                        
                         </div>
                       </div>
                     </div>

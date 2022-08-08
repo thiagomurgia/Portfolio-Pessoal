@@ -13,6 +13,6 @@ export function ApiLoading(){
   };
   
   return(
-    <Lottie options={defaultOptions}/>
+    <Lottie options={defaultOptions} style={{width: '30%'}}/>
   )
 }
