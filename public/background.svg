@@ -1,0 +1,132 @@
+<svg
+   width="321.78568mm"
+   height="246.92393mm"
+   viewBox="0 0 321.78568 246.92393"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter9379"
+       x="-0.1562099"
+       y="-0.087737411"
+       width="1.3124198"
+       height="1.1754748">
+      <feGaussianBlur
+         stdDeviation="5.2398951"
+         id="feGaussianBlur9381" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(3.1635358,14.572824)">
+    <g
+       id="g10488"
+       transform="rotate(21.189241,147.2651,61.973434)">
+      <g
+         id="g11277">
+        <g
+           id="g3130"
+           style="opacity:1;filter:url(#filter9379)">
+          <rect
+             style="opacity:1;fill:#0a1f1c;fill-opacity:1;stroke-width:0.264583"
+             id="rect3124"
+             width="9.7994928"
+             height="107.0406"
+             x="-46.035812"
+             y="-214.71565"
+             ry="4.8997464"
+             transform="matrix(0.68660753,-0.72702827,-0.72702827,-0.68660753,0,0)" />
+          <rect
+             style="opacity:1;fill:#0a1f1c;fill-opacity:1;stroke-width:0.264583"
+             id="rect3126"
+             width="9.7994928"
+             height="107.0406"
+             x="109.84705"
+             y="-67.499443"
+             ry="4.8997464"
+             transform="rotate(46.637838)" />
+        </g>
+      </g>
+      <g
+         id="g9750"
+         style="opacity:1"
+         transform="translate(-5.9318346,-2.2740174)">
+        <rect
+           style="opacity:1;fill:#ec8686;fill-opacity:1;stroke-width:0.264583"
+           id="rect9746"
+           width="9.7994928"
+           height="107.0406"
+           x="-46.035812"
+           y="-214.71565"
+           ry="4.8997464"
+           transform="matrix(0.68660753,-0.72702827,-0.72702827,-0.68660753,0,0)" />
+        <rect
+           style="opacity:1;fill:#ec8686;fill-opacity:1;stroke-width:0.264583"
+           id="rect9748"
+           width="9.7994928"
+           height="107.0406"
+           x="109.84705"
+           y="-67.499443"
+           ry="4.8997464"
+           transform="rotate(46.637838)" />
+      </g>
+      <g
+         id="g11285"
+         transform="translate(150.02908,179.0838)" />
+      <g
+         id="g11302"
+         transform="matrix(-0.99999444,0.00333476,0.00333476,0.99999444,497.24016,-190.43304)">
+        <g
+           id="g11283"
+           style="opacity:1;filter:url(#filter9379)"
+           transform="translate(150.02908,179.0838)">
+          <rect
+             style="opacity:1;fill:#0a1f1c;fill-opacity:1;stroke-width:0.264583"
+             id="rect11279"
+             width="9.7994928"
+             height="107.0406"
+             x="-46.035812"
+             y="-214.71565"
+             ry="4.8997464"
+             transform="matrix(0.68660753,-0.72702827,-0.72702827,-0.68660753,0,0)" />
+          <rect
+             style="opacity:1;fill:#0a1f1c;fill-opacity:1;stroke-width:0.264583"
+             id="rect11281"
+             width="9.7994928"
+             height="107.0406"
+             x="109.84705"
+             y="-67.499443"
+             ry="4.8997464"
+             transform="rotate(46.637838)" />
+        </g>
+        <g
+           id="g11291"
+           style="opacity:1"
+           transform="translate(157.15019,178.03809)">
+          <rect
+             style="opacity:1;fill:#ec8686;fill-opacity:1;stroke-width:0.264583"
+             id="rect11287"
+             width="9.7994928"
+             height="107.0406"
+             x="-46.035812"
+             y="-214.71565"
+             ry="4.8997464"
+             transform="matrix(0.68660753,-0.72702827,-0.72702827,-0.68660753,0,0)" />
+          <rect
+             style="opacity:1;fill:#ec8686;fill-opacity:1;stroke-width:0.264583"
+             id="rect11289"
+             width="9.7994928"
+             height="107.0406"
+             x="109.84705"
+             y="-67.499443"
+             ry="4.8997464"
+             transform="rotate(46.637838)" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
