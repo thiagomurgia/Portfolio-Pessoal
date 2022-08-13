@@ -10,6 +10,7 @@ import { Container, Content } from './styles'
 import Twitter from '../../assets/icons/twitter-svgrepo-com.svg'
 import Linkedin from '../../assets/icons/linkedin.svg'
 import Github from '../../assets/icons/github.svg'
+import Download from '../../assets/icons/download.svg'
 import { ApiLoading } from '../../animations/ApiLoading'
 
 export function Me(){
@@ -92,6 +93,13 @@ export function Me(){
                         <span>Linux</span>
                       </p>
                     </div>
+                  </div>
+                  <div className="curriculo">
+                    <a href="#">
+                    <button>
+                    Download Currículo
+                    </button>
+                    </a>
                   </div>
                 </div>
                 <div className="card-footer">

@@ -67,7 +67,7 @@ export const Content = styled.div`
       }
 
       h2, h3, h4{
-        padding: 16px;
+        padding:8px;
       }
 
       .techs{
@@ -104,6 +104,35 @@ export const Content = styled.div`
           margin-left: 8px;
           color:#EEEEEE;
           font-weight: 900;
+        }
+      }
+    }
+
+    .curriculo{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      flex-direction: column;
+      button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border:solid 2px #a98b98;
+        border-radius:4px;
+        padding: 8px 36px;
+        color:#a98b98;
+        justify-content: space-around;
+        cursor:pointer;
+        font-weight: 700;
+        transition: .2s;
+        font-size: 1rem;
+
+        &:hover{
+          background:#a98b98;
+          color:#393E46;
         }
       }
     }
