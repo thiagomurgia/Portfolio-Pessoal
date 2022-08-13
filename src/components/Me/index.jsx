@@ -10,7 +10,6 @@ import { Container, Content } from './styles'
 import Twitter from '../../assets/icons/twitter-svgrepo-com.svg'
 import Linkedin from '../../assets/icons/linkedin.svg'
 import Github from '../../assets/icons/github.svg'
-import Download from '../../assets/icons/download.svg'
 import { ApiLoading } from '../../animations/ApiLoading'
 
 export function Me(){
@@ -95,7 +94,7 @@ export function Me(){
                     </div>
                   </div>
                   <div className="curriculo">
-                    <a href="#">
+                    <a href="https://github.com/thiagomurgia/Portfolio-Pessoal/blob/main/src/assets/files/Profile-ThiagoMurgia.pdf">
                     <button>
                     Download Currículo
                     </button>
