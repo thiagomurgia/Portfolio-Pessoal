@@ -94,7 +94,7 @@ export function Me(){
                     </div>
                   </div>
                   <div className="curriculo">
-                    <a href="https://github.com/thiagomurgia/Portfolio-Pessoal/blob/main/src/assets/files/Profile-ThiagoMurgia.pdf">
+                    <a href="https://github.com/thiagomurgia/Portfolio-Pessoal/raw/main/src/assets/files/Profile-ThiagoMurgia.pdf">
                     <button>
                     Download Currículo
                     </button>
