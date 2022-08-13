@@ -19,12 +19,6 @@ export function Me(){
   const[user,setUser] = useState([])
   const[loading, setLoading] = useState(false)
 
-  const createdData = user.created_at;
-
-  console.log(createdData)
-
-  
-
   useEffect(()=>{
     getData()
    },[])
