@@ -1,8 +1,9 @@
-import { Container } from "./styles"
+/* eslint-disable import/no-unresolved */
+import { Container } from './styles'
 
 import {Spring, animated} from 'react-spring'
 
-import { LottieHome } from "../../animations/HomeAnimation"
+import { LottieHome } from '../../animations/HomeAnimation'
 
 export function Home(){
 

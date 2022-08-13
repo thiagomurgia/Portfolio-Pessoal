@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "format": "prettier --write \"src/**/*.{js,jsx}\"",
+  "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
   "scripts": {
     "start": "react-scripts start",
     "dev": "vite --port 3000",
@@ -12,6 +14,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "axios": "^0.27.2",
+    "date-fns": "^2.29.1",
     "dotenv": "^16.0.1",
     "emailjs-com": "^3.2.0",
     "firebase": "^9.9.1",
@@ -40,6 +43,13 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.7.1",
     "vite": "^3.0.0"
   }
 }

@@ -1,25 +1,28 @@
-import { useState } from 'react' 
-import { Header } from "./components/Header"
-import { Home } from "./components/Home"
-import { GlobalStyles } from "./global.styles"
-import { Dock } from "./styles"
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import { useState } from 'react'
+// eslint-disable-next-line import/no-unresolved
+import { Header } from './components/Header'
+// eslint-disable-next-line import/no-unresolved
+import { Home } from './components/Home'
+import { GlobalStyles } from './global.styles'
+import { Dock } from './styles'
 
 
 
 
-import HomeIcon from './assets/icons/home-icon.svg';
-import PortfolioIcon from './assets/icons/portfolio-icon.svg';
-import UserIcon from './assets/icons/user-icon.svg';
-import TechnologyIcon from './assets/icons/technology-icon.svg';
-import MoonIcon from './assets/icons/moon-icon.svg';
-import DotsIcon from './assets/icons/dots-icon.svg';
-import SunIcon from './assets/icons/sun-icon.svg';
+import HomeIcon from './assets/icons/home-icon.svg'
+import PortfolioIcon from './assets/icons/portfolio-icon.svg'
+import UserIcon from './assets/icons/user-icon.svg'
+import Return from './assets/icons/return.svg'
 import Message from './assets/icons/message.svg'
 
 
-import {Me} from "./components/Me"
-import {Techs} from "./components/Techs"
+// eslint-disable-next-line import/no-unresolved
+import {Me} from './components/Me'
+// eslint-disable-next-line import/no-unresolved
 import {Portfolio} from './components/Portfolio'
+// eslint-disable-next-line import/no-unresolved
 import { Contact } from './components/Contact'
 
 
@@ -30,9 +33,8 @@ export function App() {
   const[showHome, setShowHome] = useState(false)
   const[showPortfolio, setShowPortfolio] = useState(false)
   const[showAbout, setShowAbout] = useState(false)
-  const[showTech, setShowTech] = useState(false)
   const[contact, setContact] = useState(false)
-  const[theme, setTheme] = useState(false)
+  // eslint-disable-next-line no-unused-vars
   const[showDesktop, setShowDesktop] = useState(false)
   
 
@@ -40,7 +42,6 @@ export function App() {
     setShowHome(true)
     setShowPortfolio(false)
     setShowAbout(false)
-    setShowTech(false)
     setShowDesktop(false)
     setContact(false)
   }
@@ -49,7 +50,6 @@ export function App() {
     setShowHome(false)
     setShowPortfolio(true)
     setShowAbout(false)
-    setShowTech(false)
     setShowDesktop(false)
     setContact(false)
   }
@@ -58,25 +58,15 @@ export function App() {
     setShowHome(false)
     setShowPortfolio(false)
     setShowAbout(true)
-    setShowTech(false)
     setShowDesktop(false)
     setContact(false)
   }
   
-  function handleTechClick(){
-    setShowHome(false)
-    setShowPortfolio(false)
-    setShowAbout(false)
-    setShowTech(true)
-    setShowDesktop(false)
-    setContact(false)
-  }
   
   function handleDesktopClick(){
     setShowHome(false)
     setShowPortfolio(false)
     setShowAbout(false)
-    setShowTech(false)
     setShowDesktop(true)
     setContact(false)
   }
@@ -85,15 +75,8 @@ export function App() {
     setShowHome(false)
     setShowPortfolio(false)
     setShowAbout(false)
-    setShowTech(false)
-    setShowDesktop(false)
     setContact(true)
   }
-  
-  
-    function changeThemeColor(){
-      setTheme(!theme)
-    }
   
 
   return (
@@ -104,16 +87,13 @@ export function App() {
         {showPortfolio ? <Portfolio/> : null}
         {showAbout ? <Me/> : null}
         {contact ? <Contact/> : null}
-        {showTech ? <Techs/> : null}
         
       <Dock>
       <img src={HomeIcon} alt="home" value="home" onClick={handleHomeClick}/>
       <img src={PortfolioIcon} alt="portfolio" value="port" onClick={handlePortClick}/>
       <img src={UserIcon} alt="about-user" value="user" onClick={handleAboutClick}/>
-      <img src={TechnologyIcon} alt="technologies" value="tech" onClick={handleTechClick}/>
       <img src={Message} alt="message" value="contact" onClick={handleContactClick}/>
-      {theme ? <img src={MoonIcon} alt="change-theme" type="lightTheme" onClick={changeThemeColor} /> : <img src={SunIcon} alt="change-theme" type="lightTheme" onClick={changeThemeColor}/>}
-      <img src={DotsIcon} alt="open-apps" value="home" onClick={handleDesktopClick}/>
+      <img src={Return} alt="open-apps" value="home" onClick={handleDesktopClick}/>
     </Dock>
     </section>
     

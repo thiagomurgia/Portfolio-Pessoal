@@ -1,14 +1,18 @@
-import { db } from "../../firebaseConfig";
-import { addDoc, collection } from "firebase/firestore";
-import { Container } from "./styles";
-import { ModalProvider } from "styled-react-modal";
-import { useFormik } from "formik";
-import * as yup from "yup";
-import { Spring, animated } from "react-spring";
-import { useState, useRef } from "react";
-import { MessageConfirm } from "../../animations/MessageAnimation copy";
-import Swal from "sweetalert2";
-import InputMask from "react-input-mask";
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable no-useless-escape */
+/* eslint-disable react/jsx-key */
+/* eslint-disable import/no-unresolved */
+import { db } from '../../firebaseConfig'
+import { addDoc, collection } from 'firebase/firestore'
+import { Container } from './styles'
+import { ModalProvider } from 'styled-react-modal'
+import { useFormik } from 'formik'
+import * as yup from 'yup'
+import { Spring, animated } from 'react-spring'
+import { useState, useRef } from 'react'
+import { MessageConfirm } from '../../animations/MessageAnimation copy'
+import Swal from 'sweetalert2'
+import InputMask from 'react-input-mask'
 import emailjs from '@emailjs/browser'
 
 export function Contact() {
@@ -106,6 +110,7 @@ function sendEmail() {
                           />,
                         ]
                       : [
+                          // eslint-disable-next-line jsx-a11y/label-has-associated-control
                           <label>Nome: </label>,
                           <input
                             id="name"

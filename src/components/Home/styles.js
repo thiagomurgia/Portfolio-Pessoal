@@ -30,8 +30,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
       .lottie{
-        position: relative;
-        padding: 8%;
+        padding: 10%;
       }
     }
 

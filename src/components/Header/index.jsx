@@ -1,5 +1,6 @@
-import { DateTime } from "../DateTime"
-import { Container } from "./styles"
+// eslint-disable-next-line import/no-unresolved
+import { DateTime } from '../DateTime'
+import { Container } from './styles'
 
 export function Header(){
   return(

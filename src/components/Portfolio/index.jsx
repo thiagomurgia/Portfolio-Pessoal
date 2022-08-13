@@ -1,3 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react/jsx-key */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable import/no-unresolved */
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Spring, animated } from 'react-spring'
@@ -6,8 +10,8 @@ import Copy from '../../assets/icons/copy.svg'
 import { Copy as CopyAnim } from '../../animations/Copy'
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/navigation';
 import { Navigation } from "swiper";
 
 import { Container} from './styles'
@@ -78,8 +82,8 @@ export function Portfolio(){
               
                 {repos.map((repo) => {
                   return(
-                    <SwiperSlide>
-                    <div className="card-wrapper" key={repo.id}>
+                    <SwiperSlide key={repo.id}>
+                    <div className="card-wrapper">
                       <div className="card">
 
                       <div className="header"><h1>Repositório: </h1> <h3>{repo.name}</h3></div>
